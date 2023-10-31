@@ -48,4 +48,8 @@ world_map_merge <- world_map_merge %>%
   mutate(diff_2010_2019 = (x2019 - x2010))
 ```
 
+Map data to inspect
+```{r}
+qtm(world_map_merge, fill = "diff_2010_2019")
+```
 
